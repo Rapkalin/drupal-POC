@@ -1,0 +1,14 @@
+name: Code examples
+type: theme
+base theme: olivero
+description: 'Code examples theme based on Drupal Olivero theme'
+core_version_requirement: ^9 || ^10
+project: 'code-examples'
+
+libraries:
+  - 'code-examples/global-styling'
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+
