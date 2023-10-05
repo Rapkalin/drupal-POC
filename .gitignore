@@ -6,57 +6,57 @@
 # https://www.drupal.org/docs/develop/using-composer
 
 # Ignore configuration files that may contain sensitive information
-/web/sites/*/*settings*.php
-/web/sites/*/*services*.yml
+#/web/sites/*/*settings*.php
+#/web/sites/*/*services*.yml
+code-examples/web/core
 
 # Ignore paths that may contain user-generated content
-/web/sites/*/files
-/web/sites/*/public
-/web/sites/*/private
-/web/sites/*/files-public
-/web/sites/*/files-private
+code-examples/web/sites/*/files
+code-examples/web/sites/*/public
+code-examples/web/sites/*/private
+code-examples/web/sites/*/files-public
+code-examples/web/sites/*/files-private
 
 # Ignore paths that may contain temporary files
-/web/sites/*/translations
-/web/sites/*/tmp
-/web/sites/*/cache
+code-examples/web/sites/*/translations
+code-examples/web/sites/*/tmp
+code-examples/web/sites/*/cache
 
 # Ignore drupal core (if not versioning drupal sources)
-/web/vendor
-/web/core
-/web/modules/README.txt
-/web/profiles/README.txt
-/web/sites/development.services.yml
-/web/sites/example.settings.local.php
-/web/sites/example.sites.php
-/web/sites/README.txt
-/web/themes/README.txt
-/web/.csslintrc
-/web/.editorconfig
-/web/.eslintignore
-/web/.eslintrc.json
-/web/.gitattributes
-/web/.htaccess
-/web/.ht.router.php
-/web/autoload.php
-/web/composer.json
-/web/composer.lock
-/web/example.gitignore
-/web/index.php
-/web/INSTALL.txt
-/web/LICENSE.txt
-/web/README.txt
-/web/robots.txt
-/web/update.php
-/web/web.config
+code-examples/web/modules/README.txt
+code-examples/web/profiles/README.txt
+code-examples/web/sites/development.services.yml
+code-examples/web/sites/example.settings.local.php
+code-examples/web/sites/example.sites.php
+code-examples/web/sites/README.txt
+code-examples/web/themes/README.txt
+code-examples/web/.csslintrc
+code-examples/web/.editorconfig
+code-examples/web/.eslintignore
+code-examples/web/.eslintrc.json
+code-examples/web/.gitattributes
+code-examples/web/.htaccess
+code-examples/web/.ht.router.php
+code-examples/web/autoload.php
+code-examples/web/composer.json
+code-examples/web/composer.lock
+code-examples/web/example.gitignore
+code-examples/web/index.php
+code-examples/web/INSTALL.txt
+code-examples/web/LICENSE.txt
+code-examples/web/README.txt
+code-examples/web/robots.txt
+code-examples/web/update.php
+code-examples/web/web.config
 
 # Ignore vendor dependencies and scripts
-/vendor
-/composer.phar
-/composer
-/robo.phar
-/robo
-/drush.phar
-/drush
-/drupal.phar
-/drupal
+vendor
+code-examples/composer.phar
+code-examples/composer
+code-examples/robo.phar
+code-examples/robo
+code-examples/drush.phar
+/code-examplesdrush
+code-examples/drupal.phar
+code-examples/drupal
+.idea
