@@ -9,6 +9,7 @@
 #/web/sites/*/*settings*.php
 #/web/sites/*/*services*.yml
 code-examples/web/core
+code-examples/web/modules/contrib
 
 # Ignore paths that may contain user-generated content
 code-examples/web/sites/*/files
