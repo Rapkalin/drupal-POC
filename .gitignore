@@ -25,12 +25,15 @@ code-examples/web/sites/*/cache
 
 # Ignore drupal core (if not versioning drupal sources)
 code-examples/web/modules/README.txt
+
+code-examples/web/themes/README.txt
+code-examples/web/themes/contrib
+
 code-examples/web/profiles/README.txt
 code-examples/web/sites/development.services.yml
 code-examples/web/sites/example.settings.local.php
 code-examples/web/sites/example.sites.php
 code-examples/web/sites/README.txt
-code-examples/web/themes/README.txt
 code-examples/web/.csslintrc
 code-examples/web/.editorconfig
 code-examples/web/.eslintignore
