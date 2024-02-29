@@ -8,29 +8,38 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
+
     "repositories": [
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
+
     "require": {
         "php": "^8.1",
         "composer/installers": "^2.0",
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
 
-        "vlucas/phpdotenv": "^5.5",
+        "drupal/bartik": "^1.0",
+        "drupal/bartik_admin": "^2.0",
+        "drupal/gin": "^3.0@RC",
+
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/paragraphs": "^1.16",
+        "drupal/toolbar_menu": "^3.0",
         "drush/drush": "*",
 
-        "drupal/gin": "3.x-dev@dev",
-        "drupal/bartik_admin": "^2.0",
+        "vlucas/phpdotenv": "^5.5"
+    },
 
-        "drupal/paragraphs": "^1.16"
+    "autoload": {
+        "files": [
+            "load.environment.php"
+        ]
     },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
+
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
@@ -41,14 +50,17 @@
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true
         },
+
         "sort-packages": true
     },
+
     "extra": {
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
             }
         },
+
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
@@ -78,11 +90,13 @@
                 "type:drupal-custom-theme"
             ]
         },
+
         "drupal-core-project-message": {
             "include-keys": [
                 "homepage",
                 "support"
             ],
+
             "post-create-project-cmd-message": [
                 "<bg=blue;fg=white>                                                         </>",
                 "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
