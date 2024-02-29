@@ -1,0 +1,24 @@
+uuid: 82e3e515-3f75-491c-892c-194c08585925
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_longue_code_ex
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.paragraph_code_example
+  module:
+    - text
+id: paragraph.paragraph_code_example.field_description_longue_code_ex
+field_name: field_description_longue_code_ex
+entity_type: paragraph
+bundle: paragraph_code_example
+label: 'Description longue Code example'
+description: "Ce champs est un paragraphe types qui correspond à la description longue d'un article Code example"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

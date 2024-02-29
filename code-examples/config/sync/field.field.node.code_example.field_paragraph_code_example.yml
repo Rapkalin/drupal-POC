@@ -1,0 +1,31 @@
+uuid: df57ae0a-d72d-4ad4-9cce-2abdf8d6f560
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_code_example
+    - node.type.code_example
+    - paragraphs.paragraphs_type.paragraph_code_example
+  module:
+    - entity_reference_revisions
+id: node.code_example.field_paragraph_code_example
+field_name: field_paragraph_code_example
+entity_type: node
+bundle: code_example
+label: 'Paragraph Code example libellé décla'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraph_code_example: paragraph_code_example
+    negate: 0
+    target_bundles_drag_drop:
+      paragraph_code_example:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,33 @@
+uuid: bcbc73bf-e4fa-44eb-93fc-3e141fdac673
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.code_example.body
+    - field.field.node.code_example.field_paragraph_code_example
+    - node.type.code_example
+  module:
+    - text
+    - user
+id: node.code_example.teaser
+targetEntityType: node
+bundle: code_example
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_paragraph_code_example: true
+  langcode: true

@@ -1,0 +1,25 @@
+uuid: 412b788d-55b3-4f0d-a944-5b1e2f746191
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_code_example.field_description_longue_code_ex
+    - paragraphs.paragraphs_type.paragraph_code_example
+  module:
+    - text
+id: paragraph.paragraph_code_example.default
+targetEntityType: paragraph
+bundle: paragraph_code_example
+mode: default
+content:
+  field_description_longue_code_ex:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

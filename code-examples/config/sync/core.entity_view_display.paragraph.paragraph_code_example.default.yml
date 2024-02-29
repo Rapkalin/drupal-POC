@@ -1,0 +1,22 @@
+uuid: 19f51b51-47b1-4813-acf7-44ffd7f74386
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_code_example.field_description_longue_code_ex
+    - paragraphs.paragraphs_type.paragraph_code_example
+  module:
+    - text
+id: paragraph.paragraph_code_example.default
+targetEntityType: paragraph
+bundle: paragraph_code_example
+mode: default
+content:
+  field_description_longue_code_ex:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

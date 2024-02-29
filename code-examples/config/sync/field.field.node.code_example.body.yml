@@ -1,0 +1,30 @@
+uuid: adc9e6b7-463c-4e73-aedc-c18fe6db765f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.code_example
+  module:
+    - text
+id: node.code_example.body
+field_name: body
+entity_type: node
+bundle: code_example
+label: Body
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    summary: "Résumé de l'article Code example"
+    format: full_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+  allowed_formats:
+    - full_html
+field_type: text_with_summary
