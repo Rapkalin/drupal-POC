@@ -860,7 +860,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
+
+$databases['default']['default'] = [
   'database' => 'drupal_poc_231002',
   'username' => 'root',
   'password' => 'root',
@@ -871,5 +872,11 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
-$settings['config_sync_directory'] = 'sites/default/files/config_sbRmmDZ0AEt2BD6eXNbHjtH1XjOBh8Vl912Yj5gW0WP6NdTIL5w8282s2XHziReU2zbWmdBMrQ/sync';
+];
+
+$settings['config_sync_directory'] = '../config/sync';
+
+$settings['trusted_host_patterns'] = [
+  '^' . getenv('DRUPAL_TRUSTED_DOMAIN') . "\." . getenv('DRUPAL_TRUSTED_DOMAIN_EXTENSION') . '$',
+];
+
